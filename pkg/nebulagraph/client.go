@@ -171,6 +171,9 @@ func (gp *GraphPool) initConnectionPool() error {
 	conf.TimeOut = time.Duration(gp.graphOption.TimeoutUs) * time.Microsecond
 	conf.IdleTime = time.Duration(gp.graphOption.IdleTimeUs) * time.Microsecond
 	var sslConfig *tls.Config
+		sslConfig = &tls.Config{
+		InsecureSkipVerify: true,
+	}
 	if gp.graphOption.SslCaPemPath != "" {
 		var err error
 		sslConfig, err = graph.GetDefaultSSLConfig(
@@ -201,6 +204,9 @@ func (gp *GraphPool) initSessionPool() error {
 		return err
 	}
 	var sslConfig *tls.Config
+		sslConfig = &tls.Config{
+		InsecureSkipVerify: true,
+	}
 	if gp.graphOption.SslCaPemPath != "" {
 		var err error
 		sslConfig, err = graph.GetDefaultSSLConfig(
