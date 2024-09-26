@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/vealfan/k6-plugin/pkg/common"
+	"github.com/vesoft-inc/k6-plugin/pkg/common"
 	graph "github.com/vesoft-inc/nebula-go/v3"
 )
 
