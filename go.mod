@@ -1,4 +1,4 @@
-module github.com/vealfan/k6-plugin
+module github.com/vesoft-inc/k6-plugin
 
 go 1.19
 
