@@ -39,3 +39,4 @@ require (
 	gopkg.in/guregu/null.v3 v3.3.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+replace github.com/vesoft-inc/k6-plugin v0.0.0-20240924091330-6a10442f0015 => github.com/vealfan/k6-plugin v0.0.0-20240924091330-6a10442f0015
