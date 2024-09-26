@@ -1,8 +1,8 @@
 package k6plugin
 
 import (
-	"github.com/vesoft-inc/k6-plugin/pkg/aggcsv"
-	"github.com/vesoft-inc/k6-plugin/pkg/nebulagraph"
+	"github.com/vealfan/k6-plugin/pkg/aggcsv"
+	"github.com/vealfan/k6-plugin/pkg/nebulagraph"
 	"go.k6.io/k6/js/modules"
 	"go.k6.io/k6/output"
 )
